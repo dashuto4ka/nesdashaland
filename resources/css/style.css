@@ -1,0 +1,326 @@
+body {
+	margin: 0;
+	background: beige;
+	font-family: "Indie Flower";
+}
+
+div {
+	border: solid rgba(255, 255, 255, 0) 1px;
+}
+
+.background {
+	margin-top: 0;
+	width: 100%;
+	height: 100%;
+	background: grey url('../images/mine.jpg');
+	background-size: cover;
+}
+
+/* GAME */
+
+.game {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	width: 15.8rem;
+	height: 10rem;
+}
+
+.game-button {
+	z-index: 1;
+}
+
+.game-button p {
+	text-align: center;
+}
+
+.answers a {
+	text-decoration: none;
+	color: beige;
+}
+
+.answers .yes {
+	margin-right: .5rem;
+}
+
+.answers .yes:hover, .answers .no:hover {
+	border-bottom: solid 1px beige;
+}
+
+.fa-gamepad {
+	animation: musicNote 6s 2s 6 linear;
+}
+
+.game-after {
+	position: relative;
+	top: -8.25rem;
+	visibility: hidden;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* MUSIC */
+
+/* BUTTON */
+
+.music {
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+	width: 15.8rem;
+}
+
+.music-button, .game-button {
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	border: beige solid 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: beige;
+	margin-left: 3.7rem;
+	cursor: pointer;
+	animation: appear 2s 5s backwards;
+}
+
+.after {
+	position: relative;
+	top: -8.25rem;
+	visibility: hidden;
+}
+
+.fa-music {
+	animation: musicNote 6s 6 linear;
+}
+
+.fa-play:hover, .fa-times:hover {
+	transform: scale(1.1);
+}
+
+/* AUDIO PLAYER */
+
+.audio-player {
+	width: 15.8rem;
+	background: rgba(0, 0, 0, .6);
+	margin-top: -7rem;
+	display: none;
+}
+
+.audio-player img {
+	width: 100%;
+	height: auto;
+}
+
+.audio-player h4 {
+	text-align: center;
+	color: beige;
+}
+
+.fa-times {
+	color: beige;
+	position: relative;
+	left: 15rem;
+	cursor: pointer;
+}
+
+.audio {
+	cursor: pointer;
+}
+
+
+
+
+/* ANOTHER PART*/
+
+.headline {
+	width: 30rem;
+	margin: 0 auto;
+	animation: appear 4s 1s backwards;
+}
+
+h1 {
+	font-size: 5rem;
+	text-align: center;
+	color: beige;
+	
+}
+
+.train {
+	background: url('../images/train_1.jpg');
+	background-size: cover;
+	width: 160px;
+	height: 150px;
+	position: relative;
+	top: 20rem;
+	left: 20rem;
+	text-align: center;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.train:hover {
+	opacity: .7;
+}
+
+.train_2 {
+	background: url('../images/mining-car.png');
+	background-size: cover;
+	width: 100px;
+	height: 100px;
+
+}
+
+.mining-cars {
+	position: relative;
+	top: 6rem;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+}
+
+.mining-car {
+	background: url('../images/mining-car.png');
+	background-size: cover;
+	width: 18rem;
+	height: 9rem;
+	
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.mining-car h4 {
+	color: beige;
+	text-align: center;
+	padding-top: .5rem;
+	padding-left: 1rem;
+	font-size: 1.5rem;
+	font-family: "Indie Flower";
+	text-decoration: none;
+}
+
+.scale {
+	transform: scale(1.4);
+	transition: all 1s;
+}
+
+.opacity {
+	opacity: 1;
+}
+
+.combo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	animation: rollIn 4s ease-out backwards;
+}
+
+.top {
+	background: url('../images/gems.png');
+	background-size: cover;
+	background-position: center;
+	width: 13rem;
+	height: 4.5rem;
+	position: relative;
+	top: .5rem;
+	left: .5rem;
+	opacity: 0;
+}
+
+/*.top:hover {
+	opacity: 1;
+} */
+
+.rails {
+	margin: 0 auto;
+	top: 3rem;
+	position: relative;
+	background-image: url('../images/rails.png');
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100px;
+}
+
+footer {
+	background: beige;
+}
+
+footer p {
+	margin-left: 1rem;
+	margin-top: 1.5rem;
+	font-family: "Indie Flower";
+}
+
+@keyframes rollIn {
+	from {transform:translateX(-1200px);}
+	to {transform: translateX(0);}
+}
+
+@keyframes appear {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+@keyframes zoomIn {
+	from {scale: 0.5;}
+	to {scale: 1.5;}
+}
+
+.button {
+	margin: 0 auto;
+	width: 9rem;
+	border: 1px solid beige;
+	font-size: 1.5rem;
+	border-radius: 3rem;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	color: beige;
+	margin-top: 5rem;
+	font-family: "Indie Flower";
+}
+
+a .button {
+	text-decoration: none;
+	color: beige;
+}
+
+.button:hover {
+	background: rgba(251, 251, 251, .2);
+}
+
+
+.whole {
+	height: 100vh;
+}
+
+@keyframes musicNote{
+	0% {transform: rotate(30deg);}
+	2% {transform: rotate(-30deg);}
+	4% {transform: rotate(30deg);}
+	6% {transform: rotate(-30deg);}
+	8% {transform: rotate(30deg);}
+	10% {transform: rotate(-30deg);}
+	12% {transform: rotate(30deg);}
+	14% {transform: rotate(-30deg);}
+	16% {transform: rotate(30deg);}
+	18% {transform: rotate(-30deg);}
+	20% {transform: rotate(30deg);}
+	22% {transform: rotate(-30deg);}
+	24% {transform: rotate(30deg);}
+	26% {transform: rotate(-30deg);}
+	28% {transform: rotate(30deg);}
+	30% {transform: rotate(-30deg);}
+	32% {transform: rotate(0deg);}
+}
+
+@keyframes bat {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+
